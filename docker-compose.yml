@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+    worldwise-mongo:
+        image: mongo:7
+        container_name: worldwise-mongo
+        command: [ "--replSet", "rs0", "--bind_ip_all", "--port", "27017" ]
+        ports:
+            - "27017:27017"
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        volumes:
+            - "mongodb_data:/data/db"
+            - "mongodb_config:/data/configdb"
+        environment:
+            TZ: "America/Vancouver"
+
+    app:
+        build: .
+        volumes:
+            - ./app:/go/src/app
+        ports:
+            - "4000:4000"
+        depends_on:
+            - worldwise-mongo
+
+volumes:
+    mongodb_data:
+    mongodb_config:

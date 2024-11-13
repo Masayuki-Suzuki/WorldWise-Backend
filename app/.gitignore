@@ -1,0 +1,5 @@
+.env
+firebase-adminsdk.json
+tmp
+
+.idea

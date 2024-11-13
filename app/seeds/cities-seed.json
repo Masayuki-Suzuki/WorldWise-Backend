@@ -1,0 +1,100 @@
+{
+    "cities": [
+        {
+            "cityName": "Lisbon",
+            "country": "Portugal",
+            "emoji": "🇵🇹",
+            "date": "2027-10-31T15:59:59.138Z",
+            "notes": "My favorite city so far!",
+            "position": {
+                "lat": 38.727881642324164,
+                "lng": -9.140900099907554
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Madrid",
+            "country": "Spain",
+            "emoji": "🇪🇸",
+            "date": "2027-07-15T08:22:53.976Z",
+            "notes": "",
+            "position": {
+                "lat": 40.46635901755316,
+                "lng": -3.7133789062500004
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Berlin",
+            "country": "Germany",
+            "emoji": "🇩🇪",
+            "date": "2027-02-12T09:24:11.863Z",
+            "notes": "Amazing 😃",
+            "position": {
+                "lat": 52.53586782505711,
+                "lng": 13.376933665713324
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Munich",
+            "country": "Germany",
+            "emoji": "🇩🇪",
+            "date": "2027-02-17T10:32:11.863Z",
+            "notes": "Amazing 😃",
+            "position": {
+                "lat": 48.137154,
+                "lng": 11.576124
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "London",
+            "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+            "emoji": "🇬🇧",
+            "date": "2024-10-15T03:28:01.756Z",
+            "notes": "What the great city!!",
+            "position": {
+                "lat": 51.489978302563514,
+                "lng": -0.10939194869633352
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Vancouver",
+            "country": "Canada",
+            "emoji": "🇨🇦",
+            "date": "2024-10-15T03:30:00.098Z",
+            "notes": "The best city in North America in Summer.",
+            "position": {
+                "lat": 49.26018805133661,
+                "lng": -123.11518964780667
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Whistler",
+            "country": "Canada",
+            "emoji": "🇨🇦",
+            "date": "2024-10-15T03:35:45.177Z",
+            "notes": "Great resort place",
+            "position": {
+                "lat": 50.11719263343996,
+                "lng": -122.95579291479295
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        },
+        {
+            "cityName": "Surrey",
+            "country": "Canada",
+            "emoji": "🇨🇦",
+            "date": "2024-10-15T03:44:09.478Z",
+            "notes": "Dangerous area...!!",
+            "position": {
+                "lat": 49.19023050439751,
+                "lng": -122.84774780273439
+            },
+            "userID": "8mbD54fkAObYNxLqb0pSsNlImw33"
+        }
+    ]
+}

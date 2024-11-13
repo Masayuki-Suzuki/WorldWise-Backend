@@ -1,0 +1,14 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #222;
+    font-family: --apple-system, "Helvetica Neue", "arial", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
