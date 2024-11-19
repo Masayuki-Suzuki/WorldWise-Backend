@@ -7,6 +7,7 @@ import (
   "github.com/gofiber/fiber/v3/middleware/cors"
   "github.com/gofiber/fiber/v3/middleware/static"
   "log"
+  "os"
 
   "github.com/gofiber/fiber/v3"
   "github.com/gofiber/template/html/v2"
@@ -27,8 +28,13 @@ func main() {
     Views: engine,
   })
 
+  originA := os.Getenv("ORIGIN_A")
+  originB := os.Getenv("ORIGIN_B")
+  originC := os.Getenv("ORIGIN_C")
+  originD := os.Getenv("ORIGIN_D")
+
   app.Use(cors.New(cors.Config{
-    AllowOrigins: []string{"http://localhost:3000"},
+    AllowOrigins: []string{originA, originB, originC, originD},
   }))
   app.Use("/", static.New("./web/static"))
 
