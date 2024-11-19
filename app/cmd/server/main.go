@@ -33,8 +33,10 @@ func main() {
   originC := os.Getenv("ORIGIN_C")
   originD := os.Getenv("ORIGIN_D")
 
+  origins := []string{originA, originB, originC, originD}
+
   app.Use(cors.New(cors.Config{
-    AllowOrigins: []string{originA, originB, originC, originD},
+    AllowOrigins: origins,
   }))
   app.Use("/", static.New("./web/static"))
 
