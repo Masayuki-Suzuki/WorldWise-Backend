@@ -18,14 +18,14 @@ func (db *MongoDB) GetCities(c fiber.Ctx) error {
   if reqToken == "" {
     return c.Status(400).JSON(fiber.Map{
       "message": "Token is required.",
-      "cities":  nil,
+      "cities":  []database.City{},
     })
   }
 
   if uuid == "" {
     return c.Status(400).JSON(fiber.Map{
       "message": "UUID is required.",
-      "cities":  nil,
+      "cities":  []database.City{},
     })
   }
 
@@ -59,6 +59,10 @@ func (db *MongoDB) GetCities(c fiber.Ctx) error {
     return c.Status(500).JSON(fiber.Map{
       "message": "Failed to get cities.",
     })
+  }
+
+  if cities == nil {
+    cities = []database.City{}
   }
 
   return c.Status(200).JSON(fiber.Map{

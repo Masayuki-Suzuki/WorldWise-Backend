@@ -5,6 +5,8 @@ ENV TZ /usr/shara/zoneinfo/America/Vancouver
 ENV ROOT=/go/src/app
 WORKDIR ${ROOT}
 
+CMD ["pwd"]
+
 COPY ./app .
 EXPOSE 4000
 

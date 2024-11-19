@@ -28,3 +28,11 @@ data
 
 app/firebase-adminsdk.json
 firebase-adminsdk.json
+
+#Build files
+app/bin
+
+#Production files
+prod
+prod/Dockerfile
+prod/docker-compose.prod.yml
